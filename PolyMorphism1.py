@@ -22,7 +22,22 @@ class Employee(User):
         entry_name = input("Enter your name: ")
         entry_email = input("Enter your email: ")
         entry_pin = input("Enter your password: ")
-        if (entry_email == self.email and entry_pin -- self.pin_number):
+        if (entry_email == self.email and entry_pin -- self.pin_number)
+            print("Welcome back, {}!".format(entry_name))
+        else:
+            print("The pin or email is incorrect")
+
+
+class Manager(User):
+    base_pay = 15.00
+    department = "Management"
+    pin_number = "0451"
+
+    def getLoginInfo(self):
+        entry_name = input("Enter your name: ")
+        entry_email = input("Enter your email: ")
+        entry_pin = input("Enter your password: ")
+        if (entry_email == self.email and entry_pin -- self.pin_number)
             print("Welcome back, {}!".format(entry_name))
         else:
             print("The pin or email is incorrect")
