@@ -31,7 +31,7 @@ class ParentWindow(Frame):
         self.txtLname.grid(row=1,column=1)
 
         self.btnSubmit = Button(self.master, text="Submit", width=20)
-        self.btnSubmit.grid(row=2,column=1,padx=(0,0),pady=(30,0),Sticky=NE))
+        self.btnSubmit.grid(row=2,column=1,padx=(0,0),pady=(30,0),sticky=N+E)
     
 
 if __name__ == "__main__":
