@@ -19,9 +19,6 @@ class ParentWindow(Frame):
         self.txtBody = Entry(self.master)
         self.txtBody.grid(row=0,column=0,padx=(30,0),pady=(30,0))
 
-        self.destEntry = Entry(self.master)
-        self.destEntry.grid(row=0,column=1,padx=(30,0),pady=(30,0))
-
         self.sourceEntry = Entry(self.master)
 
         self.btnAdd = Button(self.master,text='Add File',command=lambda:WebPageFunction.createFile(self), font=("Helvetica",16),fg='black',bg='beige')
@@ -30,11 +27,9 @@ class ParentWindow(Frame):
         self.btncreate = Button(self.master,text='Create',command=lambda:WebPageFunction.newBody(self), font=("Helvetica",16),fg='black',bg='beige')
         self.btncreate.grid(row=2,column=0,padx=(10,0),pady=(30,0))
 
-        self.btnSubmit = Button(self.master, text="Submit", width=10, height=2, command=lambda:self.submit)
-        self.btnSubmit.grid(row=1,column=1,padx=(0,0),pady=(30,0),sticky=N+E)
+        self.btnWebpage = Button(self.master, text="Open Webpage", width=10, height=2, command=lambda:self.Webpage)
+        self.btnWebpage.grid(row=1,column=1,padx=(0,0),pady=(30,0),sticky=N+E)
 
-        self.btnCancel = Button(self.master, text="Cancel", width=10, height=2, command=lambda:self.cancel)
-        self.btnCancel.grid(row=1,column=1,padx=(0,90),pady=(30,0),sticky=N+E)
 
 if __name__ == "__main__":
     root = tkinter.Tk()

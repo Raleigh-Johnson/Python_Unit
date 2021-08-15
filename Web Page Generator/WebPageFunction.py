@@ -17,6 +17,12 @@ def newBody(self):
     body =""" <html><body>{}</body></html> """.format(self.txtBody.get())
     f.write(body)
     f = open("GenIndex.html","r")
+    print(f.read())
+    f.close()
+    
+def Webpage(self):
+    f = codecs,open("GenIndex.html","r","utf-8")
+    print(file.read())
     f.close()
     
 
