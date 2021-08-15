@@ -4,6 +4,7 @@ from tkinter import *
 import webPageGenerator
 import WebpageGUI
 
+
 def createFile(self):
     f = open("GenIndex.html","w")
     f.write("Stay tuned for our amazing summer sale!")
@@ -21,9 +22,6 @@ def newBody(self):
     f.close()
     
 def Webpage(self):
-    f = codecs,open("GenIndex.html","r","utf-8")
-    print(file.read())
-    f.close()
-    
-
-    
+    new = 2
+    url = "GenIndex.html"
+    webbrowser.open(url,new=new)

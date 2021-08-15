@@ -27,7 +27,7 @@ class ParentWindow(Frame):
         self.btncreate = Button(self.master,text='Create',command=lambda:WebPageFunction.newBody(self), font=("Helvetica",16),fg='black',bg='beige')
         self.btncreate.grid(row=2,column=0,padx=(10,0),pady=(30,0))
 
-        self.btnWebpage = Button(self.master, text="Open Webpage", width=10, height=2, command=lambda:self.Webpage)
+        self.btnWebpage = Button(self.master, text="Open Webpage", width=10, height=2, command=lambda:WebPageFunction.Webpage(self))
         self.btnWebpage.grid(row=1,column=1,padx=(0,0),pady=(30,0),sticky=N+E)
 
 
