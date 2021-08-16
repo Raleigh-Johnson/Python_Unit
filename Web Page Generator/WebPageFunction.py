@@ -1,7 +1,6 @@
 import os
 import webbrowser
 from tkinter import *
-import webPageGenerator
 import WebpageGUI
 
 """
@@ -14,6 +13,10 @@ def createFile(self):
     f.close()
     """
 
+
+
+    
+    
 def newBody(self):
     f = open("GenIndex.html","w")
     body =""" <html><body>{}</body></html> """.format(self.txtBody.get())
@@ -21,12 +24,7 @@ def newBody(self):
     f = open("GenIndex.html","r")
     print(f.read())
     f.close()
-    
-    
-def Webpage(self):
-    print("Webpage")
-    #new = 2
+    #For mac users: url = "File:/Users/jeffwiley/Documents/GitHub/Python-Unit/Python_Unit/Web Page Generator/GenIndex.html"
     url = "GenIndex.html"
-    print(url)
     webbrowser.open_new_tab(url)
     
