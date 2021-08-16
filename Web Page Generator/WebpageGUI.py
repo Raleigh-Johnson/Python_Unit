@@ -9,6 +9,7 @@ from tkinter.filedialog import askdirectory
 class ParentWindow(Frame):
     def __init__ (self, master):
         Frame.__init__ (self,master)
+        
 
         self.master = master
         self.master.resizable(width=False, height=False)
@@ -21,10 +22,11 @@ class ParentWindow(Frame):
 
         self.sourceEntry = Entry(self.master)
 
-        self.btnAdd = Button(self.master,text='Add File',command=lambda:WebPageFunction.createFile(self), font=("Helvetica",16),fg='black',bg='beige')
-        self.btnAdd.grid(row=1,column=0,padx=(10,0),pady=(30,0))
-
-        self.btncreate = Button(self.master,text='Create',command=lambda:WebPageFunction.newBody(self), font=("Helvetica",16),fg='black',bg='beige')
+        #Add Lable above text box that reads "Add Text to be added to HTML file."
+        """self.btnAdd = Button(self.master,text='OpenWebpage',command=lambda:WebPageFunction.createFile(self), font=("Helvetica",16),fg='black',bg='beige')
+        self.btnAdd.grid(row=1,column=0,padx=(10,0),pady=(30,0))"""
+        
+        self.btncreate = Button(self.master,text='Add Text',command=lambda:WebPageFunction.newBody(self), font=("Helvetica",16),fg='black',bg='beige')
         self.btncreate.grid(row=2,column=0,padx=(10,0),pady=(30,0))
 
         self.btnWebpage = Button(self.master, text="Open Webpage", width=10, height=2, command=lambda:WebPageFunction.Webpage(self))
