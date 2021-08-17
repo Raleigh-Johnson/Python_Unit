@@ -16,7 +16,7 @@ def createFile(self):
 
 
     
-    
+    #Command called in GUI to write the custome text along with opening the HTML file. 
 def newBody(self):
     f = open("GenIndex.html","w")
     body =""" <html><body>{}</body></html> """.format(self.txtBody.get())
@@ -25,6 +25,6 @@ def newBody(self):
     print(f.read())
     f.close()
     #For mac users: url = "File:/Users/jeffwiley/Documents/GitHub/Python-Unit/Python_Unit/Web Page Generator/GenIndex.html"
-    url = "GenIndex.html"
+    url = "GenIndex.html" #For PC Users
     webbrowser.open_new_tab(url)
     
