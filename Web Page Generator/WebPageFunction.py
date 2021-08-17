@@ -2,6 +2,7 @@ import os
 import webbrowser
 from tkinter import *
 import WebpageGUI
+import WebpageGUIFileTrans
 
 """
 def createFile(self):
@@ -12,8 +13,11 @@ def createFile(self):
     print(f.read())
     f.close()
     """
-
-
+#Command called in WebpageGUIFileTrans to allow user to browse files and select one
+def browse(self):
+    filename = filedialog.askdirectory()
+    print(filename)
+    return(filename)
 
     
     #Command called in GUI to write the custome text along with opening the HTML file. 
